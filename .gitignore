@@ -15,11 +15,6 @@ env/
 # Jupyter
 .ipynb_checkpoints/
 
-# Data outputs
-/data/processed/
-/data/raw/
-/notebooks/data/processed/
-
 # OS files
 .DS_Store
 Thumbs.db
