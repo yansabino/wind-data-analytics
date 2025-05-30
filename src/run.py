@@ -19,9 +19,8 @@ df_raw = fetch_data_from_arcgis(API_URL, PARAMS)
 
 log("Processando dados...")
 gdf_clean = process_data(df_raw)
-log(gdf_clean.head())
 
 log("Salvando dados para Tableau...")
-save_for_tableau(gdf_clean, "data/processed/aerogeradores.csv")
+save_for_tableau(gdf_clean, "../data/processed/aerogeradores.csv")
 
 log("Pipeline finalizado!")
