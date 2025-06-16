@@ -40,8 +40,7 @@ def process_data(df: pd.DataFrame) -> gpd.GeoDataFrame:
         24: 31984,
         25: 31985,
     }
-
-    df = df.dropna(subset=['X', 'Y', 'FUSO_AG'])
+    
     df["FUSO_AG"] = df["FUSO_AG"].str.extract(r"UTM\s*(\d+)").astype(float)
 
     gdfs = []
